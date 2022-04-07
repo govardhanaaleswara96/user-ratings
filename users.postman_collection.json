@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "03926096-61d7-4c19-9d1b-811a529049bc",
+		"name": "users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"raja\",\r\n    \"password\": \"123\",\r\n    \"active\": 0,\r\n    \"type\": 1,\r\n    \"firstName\": \"raja\",\r\n    \"lastName\": \"kumar\",\r\n    \"email\": \"siva@gmail.com\",\r\n    \"year\": \"2021\",\r\n    \"rating\": \"4.5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2000/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"sivakumar\",\r\n    \"password\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2000/user/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"Govardhan Aaleswara\",\r\n    \"active\": false,\r\n    \"type\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2000/user/624effafa8a9c143d4cfa154",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"user",
+						"624effafa8a9c143d4cfa154"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"Govardhan\",\r\n    \"password\": \"123\",\r\n    \"active\": 0,\r\n    \"type\": 1,\r\n    \"firstName\": \"govardhan\",\r\n    \"lastName\": \"AB\",\r\n    \"email\": \"goabala88@gmail.com\",\r\n    \"year\": \"2020\",\r\n    \"rating\": \"4.5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2000/user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User By Id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userName\": \"Govardhan\",\r\n    \"password\": \"123\",\r\n    \"active\": 0,\r\n    \"type\": 1,\r\n    \"firstName\": \"govardhan\",\r\n    \"lastName\": \"AB\",\r\n    \"email\": \"goabala88@gmail.com\",\r\n    \"year\": \"2020\",\r\n    \"rating\": \"4.5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2000/user/624effafa8a9c143d4cfa154",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"user",
+						"624effafa8a9c143d4cfa154"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remove User",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"question\": \"choose any of one location ?\",\r\n    \"options\": {\r\n        \"a\": \"chennai\",\r\n        \"b\": \"banglore\",\r\n        \"c\": \"mumbai\"\r\n    },\r\n    \"mark\": 1,\r\n    \"answer\": \"a\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:2000/user/624effafa8a9c143d4cfa154",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2000",
+					"path": [
+						"user",
+						"624effafa8a9c143d4cfa154"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
